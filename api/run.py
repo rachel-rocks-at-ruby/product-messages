@@ -81,8 +81,8 @@ def handle_messages():
             product = ProductsModel.query.get_or_404(product_id)
             user = UsersModel.query.get_or_404(user_id)
             user_phone = '+1' + user.phone
-            account_sid = 'ACf7516f6aa80eeece1a73047d39af79e5'
-            auth_token = 'ab86b93c2b16b488a4b11d62e073a0df'
+            account_sid = ''
+            auth_token = ''
             client = Client(account_sid, auth_token)
 
             message = client.messages.create(
